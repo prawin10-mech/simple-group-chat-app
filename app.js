@@ -1,14 +1,17 @@
 const express = require('express')
+const bodyParser = require("body-parser")
 
+const adminRouter = require('./routes/admin')
+const loginRouter = require('./routes/login')
 
 const app = express()
+app.use(bodyParser.urlencoded({extended: true}))
 
-app.get('/login',(req, res, next) => {
-    res.send('<form action="/" name="login"><input type="text" value="userName"/><button>submit</button></form>')
-})
 
-app.use((req, res, next) => {
-    res.send("message is sended")
-})
+app.use(adminRouter)
+
+app.use(loginRouter)
+
+
 
 app.listen(3000)
