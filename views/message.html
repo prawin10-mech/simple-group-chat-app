@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/message.css">
+    <title>Message</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="/contactus"><button id="contact" method = "POST">Contact us </button></a>
+        </nav>
+        <object data="../message.txt" type="text/plain" width="500" style="height: 300px">
+            <a href="../message.txt">No Support?</a></object>
+        <form action='/' method="POST" onsubmit="document.getElementById('username').value = localStorage.getItem('username')">
+            <input id="message" name="message" type="text">
+            <input type="hidden" name="username" id="username">
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+</body>
+</html>

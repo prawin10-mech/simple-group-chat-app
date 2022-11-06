@@ -12,7 +12,10 @@ router.get('/',(req, res, next)=> {
             data = "Please Start Some Convesation";
         }
         res.send(
-            `${data} <form action='/' method="POST" onsubmit="document.getElementById('username').value = localStorage.getItem('username')">
+            `<nav>
+                <a href="/contactus"><button id="contact" method = "POST">Contact us </button></a></a>
+            </nav>
+            ${data} <form action='/' method="POST" onsubmit="document.getElementById('username').value = localStorage.getItem('username')">
                 <input id="message" name="message" type="text">
                 <input type="hidden" name="username" id="username">
                 <br>

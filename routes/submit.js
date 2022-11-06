@@ -4,7 +4,7 @@ const path = require('path')
 
 const rootDir = require('../util/path')
 
-router.get('/login', (req, res, next) => {
-    res.sendFile(path.join(rootDir,'views','login.html'))
+router.use('/submit', (req, res, next) => {
+    res.sendFile(path.join(rootDir,'views','submit.html'))
 })
 module.exports = router

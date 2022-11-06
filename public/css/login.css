@@ -1,0 +1,37 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: papayawhip;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    border-radius: 10px;
+}
+form{
+    border: 10px double ;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+button{
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    background-color: black;
+    color: papayawhip;
+    margin: 30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactus.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Book A Call</h2>
+        <p>Book a cal slot and our representative will call you within 1hr of selected time.</p>
+        <hr>
+        <form method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" placeholder="Enter your number">
+                <label for="date">Time for Call</label>
+            <div>
+                <input type="date" id="date">
+                <input type="time" id="time">
+            </div>
+            <a href="/submit"><input id="button" type="button"  class="btn btn-dark" value="Submit"></a>
+        </form>
+    </div>
+</body>
+</html>
