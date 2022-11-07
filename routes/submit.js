@@ -1,10 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const path = require('path')
 
-const rootDir = require('../util/path')
+const controller = require('../controllers/form')
 
-router.use('/submit', (req, res, next) => {
-    res.sendFile(path.join(rootDir,'views','submit.html'))
-})
+router.use('/submit', controller.submit)
 module.exports = router
